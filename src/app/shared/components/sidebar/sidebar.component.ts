@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-sidebar',
@@ -16,7 +17,7 @@ mainMenu :{
 }
 customOptions: Array<any> =[]
 
-  constructor() { }
+  constructor(private  router:Router) { }
 
   ngOnInit(): void {
     this.mainMenu.defaultOptions =[
